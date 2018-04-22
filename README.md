@@ -1,2 +1,2 @@
 ## MyPage URL
-https://gachame424.github.io/index.html
+https://gachame424.github.io/
