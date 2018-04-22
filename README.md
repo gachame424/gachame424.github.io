@@ -1,2 +1,2 @@
-## <span style="color:#FD7722;">MyPage URL</sapn>
+## MyPage URL
 https://gachame424.github.io/index.html
