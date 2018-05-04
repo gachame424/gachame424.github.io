@@ -1,0 +1,135 @@
+/* Layout styles -----------------------------------*/
+  @media (min-width: 620px) {
+    main {
+      column-count: 2;
+      column-gap: 20px;
+    }
+    
+    section {
+      break-inside: avoid;
+    }
+  }
+   
+  @media (min-width: 960px) {
+    main {
+       column-count: 3;
+    }
+  }
+   
+  /* styles */
+   
+  :root {
+    --blue: #1d2731;
+    --yellow: #f7c331;
+    --orange: #f7882f;
+    --gray: #EBEBEB;
+    --navy: #6b7a8f;
+  }
+   
+  body {
+    background-color: var(--blue);
+    font-family: 'Ubuntu', sans-serif;
+    color: var(--navy);
+  }
+   
+  main {    
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+   
+  header {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 20px 0;
+  }
+   
+  .title {
+    font-size: 2.6em;
+    text-align: center;
+    color: white;
+    margin-bottom: 20px
+  }
+   
+  h2 {
+    font-size: 1.4em;
+    padding: 10px;
+  }
+   
+  p {
+    margin-bottom: 1em;
+    padding: 0 10px;
+  }
+   
+  .info-link {
+    text-decoration: none;
+    color: var(--orange);
+    padding: 10px;
+    display: block;
+  }
+   
+  .options {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px;
+    border-top: 3px solid var(--navy);
+    border-radius: 3px;
+    background-color: white;
+  }
+   
+  .options-link {
+    text-decoration: none;
+    font-size: 0.8em;
+    color: var(--navy);
+  }
+   
+  section {
+    border-top: 3px solid var(--navy);
+    border-radius: 3px;
+    background-color: white;
+    margin-bottom: 20px;
+    overflow: hidden;
+  }
+   
+  .section-img {
+    display: block;
+    padding: 10px;
+    margin: 0 auto;
+  }
+
+  .bigbottom-link {
+    background-color: var(--orange);
+    color: white;
+  }
+   
+  .profile {
+    border-radius: 50%;
+    width: 260px;
+    height: 260px;
+  }
+
+  .center {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .name-img {
+    display: block;
+    width: 280px;
+    height: 48px;
+    margin: 0 auto;
+    text-align:center;
+  }
+   
+  @media (min-width: 620px) {
+    .options-link {
+      font-size: 1.4em;
+    }
+    .name-img {
+      width: 328px;
+      height: 64px;
+    }
+  }
