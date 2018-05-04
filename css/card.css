@@ -105,8 +105,8 @@
    
   .profile {
     border-radius: 50%;
-    width: 260px;
-    height: 260px;
+    width: 200px;
+    height: 200px;
   }
 
   .center {
@@ -131,5 +131,9 @@
     .name-img {
       width: 328px;
       height: 64px;
+    }
+    .profile {
+      width: 264px;
+      height: 264px;
     }
   }
