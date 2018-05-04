@@ -5,5 +5,6 @@ $(function(){
       autoplaySpeed: 2400,
       dots: true,
       fade: true,
+      lazyLoad:'ondemand',
     });
   });
