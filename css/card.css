@@ -24,6 +24,7 @@
     --orange: #f7882f;
     --gray: #EBEBEB;
     --navy: #6b7a8f;
+    --white: #FFFFFF;
   }
    
   body {
@@ -47,7 +48,7 @@
   .title {
     font-size: 2.6em;
     text-align: center;
-    color: white;
+    color: var(--white);
     margin-bottom: 20px
   }
    
@@ -73,9 +74,9 @@
     align-items: center;
     justify-content: space-around;
     padding: 10px;
-    border-top: 3px solid var(--navy);
-    border-radius: 3px;
-    background-color: white;
+    border-top: 4px solid var(--navy);
+    border-radius: 4px;
+    background-color: var(--white);
   }
    
   .options-link {
@@ -85,9 +86,9 @@
   }
    
   section {
-    border-top: 3px solid var(--navy);
-    border-radius: 3px;
-    background-color: white;
+    border-top: 4px solid var(--navy);
+    border-radius: 4px;
+    background-color: var(--white);
     margin-bottom: 20px;
     overflow: hidden;
   }
@@ -100,7 +101,7 @@
 
   .bigbottom-link {
     background-color: var(--orange);
-    color: white;
+    color: var(--white);
   }
    
   .profile {
