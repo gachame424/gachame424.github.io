@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+
 <html>
 
 <head>
@@ -64,27 +66,51 @@
       <div class="center">Love J-POP and Sweets &#x1f3b6;&#x1f95e;</div>
     </section>
     <section>
-      <h2 class="center">twitter</h2>
-      <p>準備中</p>
-      <a href="https://twitter.com/gachame424" class="info-link">リンク</a>
-    </section>
-    <section>
-      <h2 class="center">facebook</h2>
-      <p>準備中</p>
-      <a href="https://www.facebook.com/junki.miura.424" class="info-link">リンク</a>
+      <h2 class="center-twitter">Twitter</h2>
+      <a class="twitter-timeline" data-border-color="#ebebeb" data-chrome="noborders transparent noheader nofooter" data-link-color="#f7882f" height="320px" href="https://twitter.com/gachame424">Tweets by gachame424</a>
     </section>
     <section>
       <h2 class="center">S-Pulse lastest game</h2>
-      <p>準備中</p>
-      <a href="https://www.s-pulse.co.jp/games/result/" class="bigbottom-link info-link" target=”_blank”>Read more...</a>
+      <div class="center spulse_result">
+        <p>
+          <span class="game_name1"></span>
+          <span class="game_name2"></span>
+          <span class="game_at">at</span>
+          <span class="game_stadium"></span>
+        </p>
+        <p>
+          <span class="spulse">清水エスパルス</span>
+          <span class="score"></span>
+          <span>&minus;</span>
+          <span class="rival_score"></span>
+          <span class="rival"></span>
+        </p>
+      </div>
+      <a href="https://www.s-pulse.co.jp/games/result/" class="bigbottom-link info-link" target=”_blank”>Show detail ...</a>
     </section>
     <section>
       <h2 class="center">Giants lastest game</h2>
-      <p>準備中</p>
-      <a href="http://www.giants.jp/G/realtime/ScoreBook.html" class="bigbottom-link info-link" target=”_blank”>Read more...</a>
+      <div class="center giants_result">
+        <p>
+          <span class="game_name1"></span>
+          <span class="game_at">at</span>
+          <span class="game_stadium"></span>
+        </p>
+        <p>
+          <span class="giants">巨 人</span>
+          <span class="score"></span>
+          <span>&minus;</span>
+          <span class="rival_score"></span>
+          <span class="rival"></span>
+        </p>
+      </div>
+      <a href="http://www.giants.jp/G/realtime/ScoreBook.html" class="bigbottom-link info-link" target=”_blank”>Show detail ...</a>
     </section>
   </main>
   <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" src="js/jquery.xdomainajax.js"></script>
+  <script type="text/javascript" src="js/get_lastgame.js"></script>
+  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
   <script type="text/javascript" src="js/slider.js"></script>
 </body>

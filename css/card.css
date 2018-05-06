@@ -22,9 +22,9 @@
     --blue: #1d2731;
     --yellow: #f7c331;
     --orange: #f7882f;
-    --gray: #EBEBEB;
+    --gray: #ebebeb;
     --navy: #6b7a8f;
-    --white: #FFFFFF;
+    --white: #ffffff;
   }
    
   body {
@@ -55,6 +55,7 @@
   h2 {
     font-size: 1.4em;
     padding: 10px;
+    border-bottom : solid 1px var(--gray); ;
   }
    
   p {
@@ -117,6 +118,13 @@
     margin-bottom: 10px;
   }
 
+  .center-twitter {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0px;
+  }
+
   .name-img {
     display: block;
     width: 280px;
@@ -124,7 +132,15 @@
     margin: 0 auto;
     text-align:center;
   }
-   
+
+  span[class*='game_'] {
+    font-size: 60%;
+  }
+
+  .score {
+    color: var(--orange);
+  }
+
   @media (min-width: 620px) {
     .options-link {
       font-size: 1.4em;
