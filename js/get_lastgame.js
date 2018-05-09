@@ -30,7 +30,7 @@ $.get(url_spulse, {cache: false}, function (data) {
 var url_giants = 'http://www.giants.jp/G/realtime/ScoreBook.html';
 
 $.get(url_giants, {cache: false}, function (data) {
-    var giants = '巨 人';
+    var giants = '巨　人';
     var text = $(data.responseText).text();
 
     // 大会名取得
@@ -56,8 +56,8 @@ $.get(url_giants, {cache: false}, function (data) {
     var match_score = text.match(/<p class="score">([\s\S]*?)<\/p>/)[1];
     match_score = match_score.match(/.+\s((.{1,2}-.{1,2})*?)\s.+/)[1];
     var separator_match_score = match_score.split(/-/);
-    var home_score = separator_match_score[0];
-    var visitor_score = separator_match_score[1];
+    var home_score = separator_match_score[1];
+    var visitor_score = separator_match_score[0];
     if(home_f)
     {
         // giantsがホーム
