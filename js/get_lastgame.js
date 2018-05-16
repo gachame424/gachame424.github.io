@@ -24,7 +24,7 @@ $.get({url:url_spulse, cache: false}, function(data){
     $('.spulse_result .score').text(spulse_score);
     // rival
     var rival_score = text.match(/<p class="matchboard__score matchborad__text--away u-text-en">([\s\S]*?)<\/p>/)[1];
-    $(".spulse_result .rival_score").text(rival_score);
+    $('.spulse_result .rival_score').text(rival_score);
 });
 
 var url_giants = 'http://www.giants.jp/G/realtime/ScoreBook.html';
@@ -62,12 +62,12 @@ $.get({url: url_giants, cache: false}, function(data){
     {
         // giantsがホーム
         $('.giants_result .score').text(home_score);
-        $(".giants_result .rival_score").text(visitor_score);
+        $('.giants_result .rival_score').text(visitor_score);
     }
     else
     {
         // giantsがビジター
         $('.giants_result .score').text(visitor_score);
-        $(".giants_result .rival_score").text(home_score);
+        $('.giants_result .rival_score').text(home_score);
     }
 });
