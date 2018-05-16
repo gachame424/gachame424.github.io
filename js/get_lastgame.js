@@ -1,6 +1,6 @@
 var url_spulse = 'https://www.s-pulse.co.jp/games/result/';
 
-$.get(url_spulse, {cache: false}, function (data) {
+$.get({url:url_spulse, cache: false}, function(data){
     var spulse = '清水エスパルス';
     var text = $(data.responseText).text();
 
@@ -29,7 +29,7 @@ $.get(url_spulse, {cache: false}, function (data) {
 
 var url_giants = 'http://www.giants.jp/G/realtime/ScoreBook.html';
 
-$.get(url_giants, {cache: false}, function (data) {
+$.get({url: url_giants, cache: false}, function(data){
     var giants = '巨　人';
     var text = $(data.responseText).text();
 
