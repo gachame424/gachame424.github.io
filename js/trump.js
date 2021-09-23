@@ -36,7 +36,7 @@ function drawTrump(hand = 0) {
 }
 
 function trumpOpen(draw_trump) {
-    let back = document.getElementById('hl_back');
+    let back = document.getElementById('trump_back');
     back.classList.remove('back');
     back.classList.add('front');
     changeBack(draw_trump);
@@ -66,7 +66,7 @@ function sleep(ms, callbackFunc) {
 }
 
 function trumpClose() {
-    let back = document.getElementById('hl_back');
+    let back = document.getElementById('trump_back');
     back.classList.remove('front');
     back.classList.add('back');
 }

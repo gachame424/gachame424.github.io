@@ -13,7 +13,7 @@ body{
 
 .profile-contents{
     width: 100%;
-    margin-top: 32px;
+    margin-top: 24px;
 }
 .profile-image{
       overflow: hidden;
@@ -65,6 +65,33 @@ body{
 .separate_line {
     border: solid 1px var(--color-pink);
     width: 80%;
+}
+
+.highlow{
+    margin-top: 24px;
+    text-align: center;
+}
+.highlow div{
+    font-weight: bold;
+    color: var(--color-pink);
+}
+.highlow_and{
+    font-size: 12px;
+}
+.highlow_button-area{
+    margin-bottom: 16px;
+}
+
+.button_highlow {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-left: 48px;
+    margin-right: 48px;
+}
+.button_highlow img{
+    width: 40px;
+    height: 40px;
 }
 
 .overlay-open {

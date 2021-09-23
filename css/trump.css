@@ -5,15 +5,6 @@
     --color-black: #000000;
 }
 
-.high_low{
-    margin-top: 24px;
-    text-align: center;
-}
-.high_low div{
-    font-weight: bold;
-    color: var(--color-pink);
-}
-
 .trump{
     display: inline-block;
     width: 104px;
@@ -51,20 +42,4 @@
     right: 0;
     bottom: 0;
     transform: rotate(180deg);
-}
-
-.hl_button-area{
-    margin-bottom: 16px;
-}
-
-.button_highlow {
-    padding: 0;
-    border: none;
-    background: transparent;
-    margin-left: 48px;
-    margin-right: 48px;
-}
-.button_highlow img{
-    width: 40px;
-    height: 40px;
 }
