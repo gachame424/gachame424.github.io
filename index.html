@@ -1,124 +1,80 @@
 <!DOCTYPE html>
-
 <html>
 
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="viewport" content="wclassth=device-wclassth,initial-scale=1.0">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
-  <title>Junki Miura HP</title>
-  <meta name="description" content="Junki Miuraのホームページ">
-  <meta property="og:title" content="Junki Miura HP">
-  <meta property="og:description" content="Junki Miuraのホームページ">
+  <title>JUNKI MIURA｜三浦 惇貴</title>
+  <meta name="description" content="三浦 惇貴のオフィシャルWEBサイト。">
+  <meta property="og:title" content="JUNKI MIURA｜三浦 惇貴">
+  <meta property="og:description" content="三浦 惇貴のオフィシャルWEBサイト。">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="https://gachame424.github.io">
   <meta property="og:image" content="https://gachame424.github.io/img/favicon.png">
   <meta property="og:image:secure_url" content="https://gachame424.github.io/img/favicon.png">
-  <meta property="og:site_name" content="Junki Miura GitHub Pages">
-  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Junki Miura Official WebSite">
   <meta name="twitter:card" content="summary">
-  <meta name="twitter:creator" content="@gachame424">
+  <meta name="twitter:site" content="@gachame424">
   <link rel="shortcut icon" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
-  <link rel="stylesheet" type="text/css" href="css/reset.css">
-  <link rel="stylesheet" type="text/css" href="css/gradation.css">
-  <link rel="stylesheet" type="text/css" href="css/card.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css">
-  <link rel="stylesheet" type="text/css" href="slick/slick.css">
-  <link rel="stylesheet" type="text/css" href="css/slider.css">
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <link rel="stylesheet" href="css/trump.css" type="text/css">
+  <script type="text/javascript" src="js/trump.js"></script>
 </head>
 
-<body class="gradation">
-  <header>
-    <img class="name-img" src="img/myname.gif" alt="myname" />
-    <div class="options">
-      <a href="https://gachame424.github.io" class="options-link">Home</a>
-      <a href="https://twitter.com/gachame424" class="options-link">Twitter</a>
-      <a href="https://www.facebook.com/junki.miura.424" class="options-link">Facebook</a>
-      <a href="https://www.instagram.com/gachame424/" class="options-link">Instagram</a>
-      <a href="https://www.wantedly.com/users/18547655" class="options-link">Wantedly</a>
+<body>
+  <div class="flexbox">
+    <div class="flex_left"></div>
+    <div class="flex_center">
+      <div class="profile-contents">
+        <div class="profile-image">
+          <img src="img/profile.jpg" alt="profile-image">
+        </div>
+        <div class="profile-description">
+          <span class="profile-name">Junki Miura</span>
+          <span class="profile-job">Web Engineer | Game Engineer</span>
+          <span class="profile-intro">Shimizu S-Pulse supporter. Yomiuri Giants fan.</span>
+        </div>
+        <div class="profile-sns">
+          <a href="https://twitter.com/gachame424"><img src="img/twitter.svg"></i></a>
+          <a href="https://www.facebook.com/junki.miura.424"><img src="img/facebook.svg"></i></a>
+          <a href="https://www.instagram.com/gachame424"><img src="img/instagram.svg"></a>
+          <a href="https://www.wantedly.com/class/junki_miura"><img src="img/wantedly.svg"></a>
+        </div>
+      </div>
+      <hr class="separate_line">
+      <div class="high_low">
+        <div>How You Like High&Low</div>
+        <div id="overlay" class="overlay-area overlay-area-width overlay-close">
+          <span id="overlay-text" class="overlay-text-area"></span>
+        </div>
+        <div class="trump">
+          <div id="hl_front" class="front">
+            <span class="front_suit">&#9824;</span>
+            <span id="front_num">7</span>
+            <span class="front_suit">&#9824;</span>
+          </div>
+        </div>
+        <div class="trump">
+          <div id="hl_back" class="back">
+            <span class="back_suit"></span>
+            <span id="back_num"></span>
+            <span class="back_suit"></span>
+          </div>
+        </div>
+        <div class="hl_button-area">
+          <button class="button_highlow" type="button" value="" onclick="highLow(this.value, true);"><img
+              src="img/button_high.png"></button>
+          <button class="button_highlow" type="button" value="" onclick="highLow(this.value, false);"><img
+              src="img/button_low.png"></button>
+        </div>
+      </div>
+      <hr class="separate_line">
     </div>
-  </header>
-  <div class='slider'>
-    <div class='single-item'>
-      <div>
-        <img data-lazy="img/spulse1.jpg" alt="spulse1" />
-      </div>
-      <div>
-        <img data-lazy="img/spulse2.jpg" alt="spulse2" />
-      </div>
-      <div>
-        <img data-lazy="img/spulse3.jpg" alt="spulse3" />
-      </div>
-      <div>
-        <img data-lazy="img/spulse4.jpg" alt="spulse4" />
-      </div>
-      <div>
-        <img data-lazy="img/giants1.jpg" alt="giants1" />
-      </div>
-      <div>
-        <img data-lazy="img/giants2.jpg" alt="giants2" />
-      </div>
-      <div>
-        <img data-lazy="img/giants3.jpg" alt="giants3" />
-      </div>
-    </div>
+    <div class="flex_right"></div>
   </div>
-  <main>
-    <section>
-      <img class="section-img profile" src="img/profile.jpg" alt="profile" />
-      <div class="center">Shimizu S-Pulse supporter &#x26bd;</div>
-      <div class="center">Yomiuri Giants fan &#x26be;</div>
-      <div class="center">Love J-POP and Sweets &#x1f3b6;&#x1f95e;</div>
-    </section>
-    <section>
-      <h2 class="center-twitter">Twitter</h2>
-      <a class="twitter-timeline" data-chrome="noheader nofooter noborders transparent" data-link-color="#f7882f"
-        height="320px" href="https://twitter.com/gachame424">Tweets by gachame424</a>
-    </section>
-    <section>
-      <h2 class="center">S-Pulse lastest game</h2>
-      <div class="center spulse_result">
-        <p>
-          <span class="game_name1"></span>
-          <span class="game_name2"></span>
-          <span class="game_at">at</span>
-          <span class="game_stadium"></span>
-        </p>
-        <p>
-          <span class="spulse">清水エスパルス</span>
-          <span class="score"></span>
-          <span>&minus;</span>
-          <span class="rival_score"></span>
-          <span class="rival"></span>
-        </p>
-      </div>
-      <a href="https://www.s-pulse.co.jp/games/result/" class="bigbottom-link info-link" target=”_blank”>Show detail ...</a>
-    </section>
-    <section>
-      <h2 class="center">Giants lastest game</h2>
-      <div class="center giants_result">
-        <p>
-          <span class="game_name1"></span>
-          <span class="game_at">at</span>
-          <span class="game_stadium"></span>
-        </p>
-        <p>
-          <span class="giants">巨 人</span>
-          <span class="score"></span>
-          <span>&minus;</span>
-          <span class="rival_score"></span>
-          <span class="rival"></span>
-        </p>
-      </div>
-      <a href="http://www.giants.jp/G/realtime/ScoreBook.html" class="bigbottom-link info-link" target=”_blank”>Show detail ...</a>
-    </section>
-  </main>
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
-  <script type="text/javascript" src="js/jquery.xdomainajax.js"></script>
-  <script type="text/javascript" src="js/get_lastgame.js"></script>
-  <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-  <script type="text/javascript" src="slick/slick.min.js"></script>
-  <script type="text/javascript" src="js/slider.js"></script>
+  <footer class="footer footer-area-color">Copyright©Junki Miura. All Rights Reserved.</footer>
 </body>
 
 </html>
