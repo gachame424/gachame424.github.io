@@ -110,7 +110,7 @@ body{
 }
 .overlay-area {
     position: absolute;
-    margin-top: 40px;
+    margin-top: 32px;
     z-index: 2;
     height: 160px;
     background: rgba(255, 255, 255, 0.95);
