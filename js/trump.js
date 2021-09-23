@@ -1,8 +1,29 @@
+const OVERLAY_OPEN_MS = 1000;
+const OVERLAY_CLOSE_MS = 2000;
+
 function highLow(hand, is_high) {
+    disableButton();
     let draw_trump = drawTrump(hand);
     trumpOpen(draw_trump);
     overlay(judge(hand, draw_trump, is_high));
     changeTrump();
+    sleep(OVERLAY_OPEN_MS + OVERLAY_CLOSE_MS, function () {
+        ableButton();
+    });
+}
+
+function disableButton() {
+    let button_highlow = document.getElementsByClassName('button_highlow');
+    for (let i = 0; i < button_highlow.length; i++) {
+        button_highlow[i].disabled = true;
+    }
+}
+
+function ableButton() {
+    let button_highlow = document.getElementsByClassName('button_highlow');
+    for (let i = 0; i < button_highlow.length; i++) {
+        button_highlow[i].disabled = false;
+    }
 }
 
 function drawTrump(hand = 0) {
@@ -21,8 +42,6 @@ function trumpOpen(draw_trump) {
     changeBack(draw_trump);
 }
 
-const OVERLAY_OPEN_MS = 1000;
-const OVERLAY_CLOSE_MS = 2000;
 function overlay(judge) {
     sleep(OVERLAY_OPEN_MS, function () {
         overlayOpen(judge);
