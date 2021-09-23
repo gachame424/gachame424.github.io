@@ -61,10 +61,10 @@
     padding: 0;
     border: none;
     background: transparent;
-    margin-left: 36px;
-    margin-right: 36px;
+    margin-left: 48px;
+    margin-right: 48px;
 }
 .button_highlow img{
-    width: 56px;
-    height: 56px;
+    width: 40px;
+    height: 40px;
 }
