@@ -9,6 +9,7 @@ body{
     width: 100%;
     margin: 0;
     background: var(--color-black);
+    font-family: "Droid Sans";
 }
 
 .profile-contents{

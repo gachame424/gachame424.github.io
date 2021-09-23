@@ -27,9 +27,9 @@ function ableButton() {
 }
 
 function drawTrump(hand = 0) {
-    let rand = Math.floor(Math.random() * ((52 + 1) - 1) + 1);
+    let rand = Math.floor(Math.random() * 52 + 1);
     while (hand === rand) {
-        rand = Math.floor(Math.random() * ((52 + 1) - 1) + 1);
+        rand = Math.floor(Math.random() * 52 + 1);
     }
 
     return rand;
