@@ -1,0 +1,70 @@
+@charset "utf-8";
+
+:root {
+    --color-pink: #F4A6B8;
+    --color-black: #000000;
+}
+
+.high_low{
+    margin-top: 24px;
+    text-align: center;
+}
+.high_low div{
+    font-weight: bold;
+    color: var(--color-pink);
+}
+
+.trump{
+    display: inline-block;
+    width: 104px;
+    height: 176px;
+    margin:  32px 16px 8px 16px;
+    cursor: pointer;
+}
+.trump div {
+    position: absolute;
+    width: 96px;
+    height: 168px;
+    font-size: 2em;
+    text-align: center;
+    line-height: 168px;
+    color: var(--color-pink);
+    background-color: var(--color-black);
+    border: 4px solid var(--color-pink);
+    border-radius: 4px;
+}
+.trump span.front_suit, .trump span.back_suit{
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 24px;
+    width: auto;
+    line-height: 1em;
+    margin: 2px;
+}
+.trump div.back{
+    background: var(--color-pink);
+}
+.trump span.front_suit:last-child, .trump span.back_suit:last-child{
+    left: auto;
+    top: auto;
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.hl_button-area{
+    margin-bottom: 16px;
+}
+
+.button_highlow {
+    padding: 0;
+    border: none;
+    background: transparent;
+    margin-left: 36px;
+    margin-right: 36px;
+}
+.button_highlow img{
+    width: 56px;
+    height: 56px;
+}
