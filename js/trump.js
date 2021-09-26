@@ -2,6 +2,7 @@ const OVERLAY_OPEN_MS = 1000;
 const OVERLAY_CLOSE_MS = 2000;
 
 function highLow(hand, is_high) {
+    hand = Number(hand);
     disableButton();
     let draw_trump = drawTrump(hand);
     trumpOpen(draw_trump);
@@ -28,8 +29,8 @@ function ableButton() {
 
 function drawTrump(hand = 0) {
     let rand = Math.floor(Math.random() * 52 + 1);
-    while (hand === rand) {
-        rand = Math.floor(Math.random() * 52 + 1);
+    if (hand === rand) {
+        return drawTrump(hand);
     }
 
     return rand;
