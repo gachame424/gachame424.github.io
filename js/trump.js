@@ -73,17 +73,15 @@ function trumpClose() {
 
 function overlayOpen(judge) {
     let overlay = document.getElementById('overlay');
-    overlay.classList.remove('overlay-close');
     overlay.classList.add('overlay-open');
-    let overlay_text = document.getElementById('overlay-text');
+    let overlay_text = document.getElementById('overlay_text');
     overlay_text.textContent = convertJudge(judge);
 }
 
 function overlayClose() {
     let overlay = document.getElementById('overlay');
     overlay.classList.remove('overlay-open');
-    overlay.classList.add('overlay-close');
-    let overlay_text = document.getElementById('overlay-text');
+    let overlay_text = document.getElementById('overlay_text');
     overlay_text.textContent = '';
 }
 

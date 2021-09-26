@@ -1,14 +1,8 @@
 @charset "utf-8";
 
-:root {
-    --color-pink: #F4A6B8;
-    --color-black: #000000;
-}
-
 body{
     width: 100%;
     margin: 0;
-    background: var(--color-black);
 }
 
 .profile-contents{
@@ -16,17 +10,21 @@ body{
     margin-top: 24px;
 }
 .profile-image{
-      overflow: hidden;
-      width: 128px;
-      height: 128px;
-      border: var(--color-pink) 4px solid;
-      border-radius: 64px;
-      background: var(--color-pink);
-      margin: auto;
+    overflow: hidden;
+    width: 128px;
+    height: 128px;
+    border: var(--color-pink) 4px solid;
+    border-radius: 64px;
+    margin: auto;
 }
-.profile-image img{
-      width: 100%;
-      height: auto;
+.profile-button-area{
+    padding: 0;
+    border: none;
+    background: transparent;
+}
+.profile-button-area img{
+    width: 100%;
+    height: auto;
 }
 .profile-description{
     margin: auto;
@@ -43,7 +41,6 @@ body{
 }
 .profile-job{
     margin-bottom: 12px;
-    color: #ffffff;
     font-size: 10px;
     text-align: center;
 }
@@ -94,14 +91,6 @@ body{
     height: 40px;
 }
 
-.overlay-open {
-    opacity: 1;
-    visibility: visible;
-}
-.overlay-close {
-    opacity: 0;
-    visibility: hidden;
-}
 .overlay-text-area {
     font-size: 24px;
     position: absolute;
@@ -113,11 +102,14 @@ body{
     margin-top: 32px;
     z-index: 2;
     height: 160px;
-    background: rgba(255, 255, 255, 0.95);
-    transition: .3s linear;
+    opacity: 0.90;
+    visibility: hidden;
 }
+.overlay-open {
+    visibility: visible;
+  }
 
-.footer {
+.footer-area {
     color: var(--color-pink);
     font-size: 8px;
     display: grid;
@@ -157,8 +149,11 @@ body{
         width: 60%;
     }
 
-    .footer-area-color{
+    .footer_black{
         background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-black) 20%, var(--color-black) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
+    }
+    .footer_white{
+        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-white) 20%, var(--color-white) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
     }
 }
 

@@ -1,0 +1,21 @@
+@charset "utf-8";
+
+:root {
+    --color-pink: #F4A6B8;
+    --color-black: #000000;
+    --color-white: #FFFFFF;
+}
+
+.color_black{
+    color: var(--color-black);
+}
+.color_white{
+    color: var(--color-white);
+}
+
+.background_black{
+    background: var(--color-black);
+}
+.background_white{
+    background: var(--color-white);
+}

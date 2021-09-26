@@ -18,22 +18,23 @@
   <meta name="twitter:site" content="@gachame424">
   <link rel="shortcut icon" href="img/favicon.png">
   <link rel="apple-touch-icon" href="img/favicon.png">
+  <link rel="stylesheet" href="css/color.css" type="text/css">
   <link rel="stylesheet" href="css/style.css" type="text/css">
   <link rel="stylesheet" href="css/trump.css" type="text/css">
-  <script type="text/javascript" src="js/trump.js"></script>
 </head>
 
-<body>
+<body id="body" class="background_black">
   <div class="flexbox">
     <div class="flex_left"></div>
     <div class="flex_center">
       <div class="profile-contents">
         <div class="profile-image">
-          <img src="img/profile.jpg" alt="profile-image">
+          <button id="profile_button" class="profile-button-area" type="button" value="false"
+            onclick="darkMode(this.value);"><img src="img/profile.jpg" alt="profile-image"></button>
         </div>
         <div class="profile-description">
           <span class="profile-name">Junki Miura</span>
-          <span class="profile-job">Web Engineer | Game Engineer</span>
+          <span id="profile_job" class="profile-job color_white">Web Engineer | Game Engineer</span>
           <span class="profile-intro">Shimizu S-Pulse supporter. Yomiuri Giants fan.</span>
         </div>
         <div class="profile-sns">
@@ -46,8 +47,8 @@
       <hr class="separate_line">
       <div class="highlow">
         <div>How You Like High<span class="highlow_and">&</span>Low</div>
-        <div id="overlay" class="overlay-area overlay-area-width overlay-close">
-          <span id="overlay-text" class="overlay-text-area"></span>
+        <div id="overlay" class="overlay-area overlay-area-width background_white">
+          <span id="overlay_text" class="overlay-text-area"></span>
         </div>
         <div class="trump">
           <div id="trump_front" class="front">
@@ -74,7 +75,9 @@
     </div>
     <div class="flex_right"></div>
   </div>
-  <footer class="footer footer-area-color">Copyright©Junki Miura. All Rights Reserved.</footer>
+  <footer id="footer" class="footer-area footer_black">Copyright©Junki Miura. All Rights Reserved.</footer>
+  <script type="text/javascript" src="js/dark_mode.js"></script>
+  <script type="text/javascript" src="js/trump.js"></script>
 </body>
 
 </html>
