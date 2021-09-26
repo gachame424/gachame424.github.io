@@ -202,4 +202,5 @@ document.addEventListener('DOMContentLoaded', function () {
     let hand = drawTrump();
     changeFront(hand);
     updateButtonValue(hand);
+    document.querySelector('.flexbox').style.minHeight = 'calc(' + window.innerHeight + 'px - 48px)';
 });
