@@ -199,9 +199,14 @@ function updateButtonValue(hand) {
     }
 }
 
+const PC_WIDTH = 768;
 document.addEventListener('DOMContentLoaded', function () {
     let hand = drawTrump();
     changeFront(hand);
     updateButtonValue(hand);
-    document.querySelector('.flexbox').style.minHeight = 'calc(' + window.innerHeight + 'px - 48px)';
+    if (PC_WIDTH <= window.innerWidth) {
+        document.querySelector('.flexbox').style.minHeight = 'calc(' + window.innerHeight + 'px - 24px)';
+    } else {
+        document.querySelector('.flexbox').style.minHeight = 'calc(' + window.innerHeight + 'px - 48px)';
+    }
 });

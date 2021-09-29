@@ -126,7 +126,6 @@ body{
     }
     .flex_left{
         width: 20%;
-        height: 100vh;
         /* 
         border: solid;
         border-color: var(--color-pink);
@@ -135,11 +134,9 @@ body{
     }
     .flex_center{
         width: 60%;
-        height: 100vh;
     }
     .flex_right{
         width: 20%;
-        height: 100vh;
         /* 
         border: solid;
         border-color: var(--color-pink);
@@ -148,13 +145,6 @@ body{
     }
     .overlay-area-width {
         width: 60%;
-    }
-
-    .footer_black{
-        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-black) 20%, var(--color-black) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
-    }
-    .footer_white{
-        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-white) 20%, var(--color-white) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
     }
 }
 

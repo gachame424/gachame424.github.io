@@ -19,8 +19,8 @@ function darkMode(is_black) {
 
 function changeBody(before_color, after_color) {
     let body = document.getElementById('body');
-    body.classList.remove('background_' + before_color);
-    body.classList.add('background_' + after_color);
+    body.classList.remove('body_' + before_color);
+    body.classList.add('body_' + after_color);
 }
 
 function changeJob(before_color, after_color) {
