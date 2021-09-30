@@ -23,16 +23,10 @@
 /*  PC */
 @media screen and (min-width: 768px) {
     .body_black{
-        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-black) 20%, var(--color-black) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
+        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) calc(var(--flex-left)), var(--color-black) calc(var(--flex-left)), var(--color-black) calc(var(--flex-left) + var(--flex-center)),var(--color-pink) calc(var(--flex-left) + var(--flex-center)), var(--color-pink) 100%);
     }
     .body_white{
-        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-white) 20%, var(--color-white) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
-    }
-    .footer_black{
-        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-black) 20%, var(--color-black) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
-    }
-    .footer_white{
-        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) 20%, var(--color-white) 20%, var(--color-white) 80%,var(--color-pink) 80%, var(--color-pink) 100%);
+        background: linear-gradient(90deg, var(--color-pink) 0%, var(--color-pink) calc(var(--flex-left)), var(--color-white) calc(var(--flex-left)), var(--color-white) calc(var(--flex-left) + var(--flex-center)),var(--color-pink) calc(var(--flex-left) + var(--flex-center)), var(--color-pink) 100%);
     }
 }
 

@@ -14,7 +14,6 @@ function darkMode(is_black) {
     changeBody(before_color, after_color);
     changeJob(after_color, before_color);
     changeOverlay(after_color, before_color);
-    changeFooter(before_color, after_color);
 }
 
 function changeBody(before_color, after_color) {
@@ -33,10 +32,4 @@ function changeOverlay(before_color, after_color) {
     let overlay = document.getElementById('overlay');
     overlay.classList.remove('background_' + before_color);
     overlay.classList.add('background_' + after_color);
-}
-
-function changeFooter(before_color, after_color) {
-    let footer_color = document.getElementById('footer');
-    footer_color.classList.remove('footer_' + before_color);
-    footer_color.classList.add('footer_' + after_color);
 }
